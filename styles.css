@@ -1,0 +1,148 @@
+/* Color Variables */
+
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--veryLightGray);
+}
+
+/* Main Styles */
+
+.main {
+    width: 100%;
+    max-width: 327px;
+    height: 1326px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+
+.card_component {
+    width: 100%;
+    max-width: 327px;
+    height: 442px;
+    padding: 48px 49px;
+}
+
+.card_title {
+    margin-bottom: 27px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    color: var(--veryLightGray);
+    position: relative;
+    top: -2px;
+}
+
+.card_description {
+    margin-bottom: 26px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--transparentWhite);
+    line-height: 1.67;
+    position: relative;
+    top: -4px;
+    left: -1px;
+    letter-spacing: 0.1px;
+}
+
+.button_container {
+    width: 100%;
+    max-width: 146px;
+    position: relative;
+    top: -5px;
+}
+
+.button {
+    width: 100%;
+    height: 48px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--veryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Individual Styles */
+
+.card_1 {
+    background-color: var(--brightOrange);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card_2 {
+    background-color: var(--darkCyan);
+}
+
+.card_3 {
+    background-color: var(--veryDarkCyan);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.button_1 {
+    color: var(--brightOrange);
+}
+
+.button_1:hover {
+    padding-top: 12px;
+    background-color: var(--brightOrange);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+.button_2 {
+    color: var(--darkCyan);
+}
+
+.button_2:hover {
+    padding-top: 12px;
+    background-color: var(--darkCyan);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+.button_3 {
+    color: var(--veryDarkCyan);
+}
+
+.button_3:hover {
+    padding-top: 12px;
+    background-color: var(--veryDarkCyan);
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .main {
+/*         width: 100%;
+        max-width: 920px;
+        height: 500px;
+        display: flex; */
+    }
+
+}
