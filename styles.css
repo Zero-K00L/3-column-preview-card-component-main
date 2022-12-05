@@ -23,11 +23,13 @@ body {
 
 /* Main Styles */
 
+
 .main {
     width: 100%;
     max-width: 327px;
-    height: 1326px;
+    height: 100%;
     margin: 0 auto;
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -104,6 +106,7 @@ body {
 
 .button_1 {
     color: var(--brightOrange);
+    transition: 100ms ease-in-out; 
 }
 
 .button_1:hover {
@@ -115,6 +118,7 @@ body {
 
 .button_2 {
     color: var(--darkCyan);
+    transition: 100ms ease-in-out; 
 }
 
 .button_2:hover {
@@ -126,6 +130,7 @@ body {
 
 .button_3 {
     color: var(--veryDarkCyan);
+    transition: 100ms ease-in-out; 
 }
 
 .button_3:hover {
@@ -135,14 +140,66 @@ body {
     color: var(--veryLightGray);
 }
 
+.space {          /* Adds extra white space at bottom */
+    height: 88px;
+    width: 327px;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
     .main {
-/*         width: 100%;
+        width: 100%;
         max-width: 920px;
         height: 500px;
-        display: flex; */
+        padding-top: 0px;
+        display: flex;
     }
 
+    .space {
+        display: none;
+    }
+
+    .card_component {
+        max-width: 307px;
+        height: 500px;
+    }
+
+    .card_title {
+
+    }
+
+    .card_description {
+        margin-bottom: 84px;
+    }
+
+/*     Individual Styles */
+
+    .card_1 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .card_3 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    .description_2 {
+        width: 101%;
+    }
+
+
+    .description_3 {
+        width: 102%;
+    }
+    
+    .button_3 {
+        padding-left: 2px;
+    }
+
+    .button_3-span {
+        position: relative;
+        left: -2px;
+    }
 }
